@@ -104,6 +104,6 @@ window.onload = function() {
 
     for (let Streamer in Streamers) {
         list.innerHTML += `<button data-game="${Streamer}" onclick="window.location.href='https://www.twitch.tv/${Streamers[Streamer].title}';" 
-            taget="_blank" style="background: url(${Streamers[Streamer].img}) no-repeat; background-size: cover;" class="Streamers_btn"></button>`;
+            taget="_blank" style="background: url(${Streamers[Streamer].img}) no-repeat; background-size: cover;" class="Streamers_btn"><article></article></button>`;
     }
 }
