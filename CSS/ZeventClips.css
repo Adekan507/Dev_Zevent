@@ -97,18 +97,17 @@ display: flex;
 }
 
 article{
-  width: 0;
-  height: 0;
+  width: 200px;
+  height: 200px;
   background-color: green;
   transition: all ease-in-out 0.6s;
   position: absolute;
+  transform: scale(0);
 
 }
 
 .Streamers_btn:hover article{
-  width: 200px;
-  height: 200px;
-
+  transform: scale(1);
 }
 
 .area{
