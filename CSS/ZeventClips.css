@@ -48,7 +48,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
 
-
 }
 
 .logo{
@@ -86,6 +85,7 @@ display: flex;
   font-size: 50px;
 }
 
+
 .Streamers_btn{
   width: 150px;
   height: 150px;
@@ -94,6 +94,21 @@ display: flex;
   display: inline-block;
   z-index: 1;
   
+}
+
+article{
+  width: 0;
+  height: 0;
+  background-color: green;
+  transition: all ease-in-out 0.6s;
+  position: absolute;
+
+}
+
+.Streamers_btn:hover article{
+  width: 200px;
+  height: 200px;
+
 }
 
 .area{
