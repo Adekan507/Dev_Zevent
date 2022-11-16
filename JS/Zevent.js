@@ -103,9 +103,13 @@ window.onload = function() {
     let list = document.getElementById("list");
 
     for (let Streamer in Streamers) {
-        list.innerHTML += `<button data-game="${Streamer}" onclick="window.location.href='https://www.twitch.tv/${Streamers[Streamer].title}';" 
-                                taget="_blank" style="background: url(${Streamers[Streamer].img}) no-repeat; background-size: cover;" class="Streamers_btn">
-                                <article><p>${Streamer}</p> </article>
+        list.innerHTML += `<button data-game="${Streamer}" onclick=" window.open('https://www.twitch.tv/${Streamers[Streamer].title}', '_blank');" target="_blank"
+                             style="background: url(${Streamers[Streamer].img}) no-repeat; background-size: cover;" class="Streamers_btn">
+                                <article>
+                                    <p>${Streamer} <br />  
+                                        
+                                    </p> 
+                                </article>
                             </button>`;
     }
 }
